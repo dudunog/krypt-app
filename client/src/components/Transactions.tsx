@@ -6,10 +6,10 @@ import dummyData from '../utils/dummyData';
 import { shortenAddress } from '../utils/shortenAddress';
 
 interface Transaction {
-  id: number;
-  url: string;
+  id?: number;
+  url?: string;
   message: string;
-  timestamp: string;
+  timestamp: Date;
   addressFrom: string;
   amount: string;
   addressTo: string;
@@ -40,7 +40,7 @@ const TransactionCard = ({ addressTo, addressFrom, timestamp, message, keyword, 
           {message && (
             <>
               <br />
-              <p className='text-white text-base'>Messae: {message}</p>
+              <p className='text-white text-base'>Message: {message}</p>
             </>
           )}
         </div>
@@ -59,7 +59,7 @@ const TransactionCard = ({ addressTo, addressFrom, timestamp, message, keyword, 
 };
 
 const Transaction = () => {
-  const { currentAccount } = useContext(TransactionContext);
+  const { currentAccount, transactions } = useContext(TransactionContext);
 
   return (
     <div className='flex w-full justify-center items-center 2xl:px-20 gradient-bg-transactions'>
@@ -71,7 +71,7 @@ const Transaction = () => {
         )}
 
         <div className='flex flex-wrap justify-center items-center mt-10'>
-          {dummyData.reverse().map((transaction: Transaction, i: number) => {
+          {transactions.reverse().map((transaction: Transaction, i: number) => {
               return <TransactionCard key={i} {...transaction} />
           })}
         </div>
