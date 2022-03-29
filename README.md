@@ -32,7 +32,7 @@ Este projeto foi desenvolvido com as seguintes tecnologias:
 
 ## 🚀 Execute o projeto
 
-1. Clone este repositório `git clone https://github.com/dudunog/krypt-app.krypt-appt`
+1. Clone este repositório `git clone https://github.com/dudunog/krypt-app.git`
 2. Entre no diretório do projeto `cd krypt-app`
 3. Entre no diretório `client` com `cd client`
 4. Instale as dependências com `yarn install` ou `npm install`
