@@ -134,6 +134,7 @@ export const TransactionProvider = ({ children }: TransactionProviderProps) => {
       });
 
       setCurrentAccount(accounts[0]);
+      window.location.reload();
     } catch (error) {
       console.log(error);
 
