@@ -4,7 +4,7 @@
   <br>
 </h1>
 
-<p align="center">Web 3.0 Application built using Web 3.0 methodologies, Solidity and Metamask.</p>
+<p align="center">Web3 Application built using Web3 methodologies, Solidity and Metamask.</p>
 
 <p align="center">
   <a href="https://opensource.org/licenses/MIT">
@@ -26,7 +26,7 @@ Este projeto foi desenvolvido com as seguintes tecnologias:
 - CSS
 - React
 - TypeScript
-- Web 3
+- Web3
 - Solidity
 - Blockchain
 
