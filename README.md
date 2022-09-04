@@ -37,4 +37,4 @@ Este projeto foi desenvolvido com as seguintes tecnologias:
 3. Entre no diretório `client` com `cd client`
 4. Instale as dependências com `yarn install` ou `npm install`
 5. Crie um arquivo `.env` com a chave `VITE_GIPHY_API=token` e seu token do Giphy
-6. Inicie o projeto com `yarn run dev` OU `npm run dev`
+6. Inicie o projeto com `yarn run dev` ou `npm run dev`
